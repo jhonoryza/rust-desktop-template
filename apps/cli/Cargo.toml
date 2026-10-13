@@ -1,0 +1,19 @@
+[package]
+name = "template-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Headless CLI: run commands, inspect the registry, verify features without the GUI"
+
+[[bin]]
+name = "template-cli"
+path = "src/main.rs"
+
+[dependencies]
+template-core.workspace = true
+clap.workspace = true
+serde_json.workspace = true
+anyhow.workspace = true
+
+[lints]
+workspace = true

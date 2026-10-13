@@ -1,0 +1,24 @@
+[package]
+name = "template-ui-egui"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "egui front end (swappable): nothing below depends on this crate"
+
+[dependencies]
+template-core.workspace = true
+egui.workspace = true
+eframe.workspace = true
+log.workspace = true
+serde_json.workspace = true
+
+[dev-dependencies]
+egui_kittest = { version = "0.36", features = ["wgpu", "snapshot"] }
+serde_json.workspace = true
+
+[lints]
+workspace = true
+
+[features]
+wgpu = []
+snapshot = []
